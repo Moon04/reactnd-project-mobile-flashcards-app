@@ -1,0 +1,23 @@
+import { GET_DECKS, ADD_DECK, ADD_CARD } from "./types";
+
+export function receiveDecks(decks) {
+  return {
+    type: GET_DECKS,
+    decks,
+  }
+}
+
+export function addDeck(title) {
+  return {
+    type: ADD_DECK,
+    title,
+  }
+}
+
+export function addCard(title, card) {
+  return {
+    type: ADD_CARD,
+    title,
+    card
+  }
+}
