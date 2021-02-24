@@ -8,7 +8,7 @@ import { black, white } from "../utils/colors";
 const Deck = ({ deck, navigation }) => {
   return deck ? (
     <View style={styles.container}>
-      <View style={{ textAlign: "center", margin: "15px" }}>
+      <View style={{ textAlign: "center", margin: 15 }}>
         <Text style={styles.title}>{deck.title}</Text>
         <Text style={styles.subTitle}>{deck.questions.length} cards</Text>
       </View>

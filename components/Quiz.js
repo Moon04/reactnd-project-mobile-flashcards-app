@@ -53,7 +53,7 @@ const Quiz = ({ route, navigation }) => {
                 : deck.questions[currentCardIndex].question}
             </Text>
             <TouchableOpacity
-              style={{ margin: "20px" }}
+              style={{ margin: 20 }}
               onPress={() => setToggleQuestionAnswer(!toggleQuestionAnswer)}
             >
               <Text style={quizStyles.toggleButtonText}>
@@ -75,7 +75,7 @@ const Quiz = ({ route, navigation }) => {
           </TouchableOpacity>
         </>
       ) : (
-        <Text>
+        <Text style={{ textAlign: "center" }}>
           You can't take a quiz cause you have no cards, add cards and back
           again!
         </Text>

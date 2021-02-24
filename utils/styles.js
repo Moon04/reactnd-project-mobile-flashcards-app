@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { black, green, red } from "./colors";
+import { black, green, red, gray, white } from "./colors";
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,61 +9,62 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 40,
-    backgroundColor: "#fff",
-    borderRadius: "5px",
-    padding: "10px",
-    width: "20%",
-    margin: "20px",
+    backgroundColor: white,
+    borderRadius: 5,
+    padding: 10,
+    width: 240,
+    margin: 20,
   },
   button: {
-    borderRadius: "5px",
+    borderRadius: 5,
     textAlign: "center",
-    margin: "10px",
-    padding: "10px",
-    paddingRight: "35px",
-    paddingLeft: "35px",
+    margin: 10,
+    padding: 10,
+    paddingRight: 35,
+    paddingLeft: 35,
   },
   buttonText: {
-    fontSize: "15px",
-    fontWeight: "600",
+    fontSize: 15,
+    fontWeight: 600,
   },
   blackButton: {
     backgroundColor: black,
   },
   title: {
-    color: "#000",
+    color: black,
     fontWeight: "bold",
-    fontSize: "30px",
-    marginBottom: "10px",
+    fontSize: 30,
+    marginBottom: 10,
+    textAlign: "center"
   },
   subTitle: {
-    color: "rgb(118,118,118)",
-    fontWeight: "600",
+    color: gray,
+    fontWeight: 600,
   },
 });
 
 export const decksStyles = StyleSheet.create({
   deck: {
-    borderRadius: "5px",
+    borderRadius: 5,
     textAlign: "center",
     cursor: "pointer",
     margin: "auto",
-    marginTop: "10px",
-    marginBottom: "10px",
-    padding: "15px",
-    backgroundColor: "#fff",
-    width: "70%",
+    marginTop: 10,
+    marginBottom: 10,
+    padding: 15,
+    backgroundColor: white,
+    width: 230,
   },
 });
 
 export const quizStyles = StyleSheet.create({
   correctButton: {
     backgroundColor: green,
-    width: "10%",
+    width: 140,
   },
   incorrectButton: {
     backgroundColor: red,
-    width: "10%",
+    width: 140,
   },
   toggleButtonText: {
     color: red,
